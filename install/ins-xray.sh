@@ -56,7 +56,7 @@ touch /usr/local/etc/xray/akunxtr.conf
 touch /var/log/xray/access.log;
 touch /var/log/xray/error.log;
 
-# // version XRAY
+# // VERSION XRAY
 export version="$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
 
 # // INSTALL CORE XRAY
@@ -158,7 +158,7 @@ cat> /usr/local/etc/xray/config.json << END
                   "keyFile": "/usr/local/etc/xray/xray.key"
                   }
                 ],
-                "minversion": "1.2",
+                "minVersion": "1.2",
                  "cipherSuites": "TLS_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256"
                 }
             }
@@ -1200,10 +1200,10 @@ systemctl restart xray@trojannone
 
 # download script
 cd /usr/bin
-wget -O port-xray "https://raw.githubusercontent.com/${GitUser}/version/main/change-port/port-xray.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/${GitUser}/version/main/cert.sh"
-wget -O trojaan "https://raw.githubusercontent.com/${GitUser}/version/main/menu/trojaan.sh"
-wget -O xraay "https://raw.githubusercontent.com/${GitUser}/version/main/menu/xraay.sh"
+wget -O port-xray "https://raw.githubusercontent.com/${GitUser}/multiport/main/change-port/port-xray.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/${GitUser}/multiport/main/cert.sh"
+wget -O trojaan "https://raw.githubusercontent.com/${GitUser}/multiport/main/menu/trojaan.sh"
+wget -O xraay "https://raw.githubusercontent.com/${GitUser}/multiport/main/menu/xraay.sh"
 chmod +x port-xray
 chmod +x certv2ray
 chmod +x trojaan
