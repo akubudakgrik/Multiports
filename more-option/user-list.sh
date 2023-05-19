@@ -1,4 +1,4 @@
-# Created by aKuBuDaKgEriK
+# Created by akubudakgerik
 #wget https://github.com/${GitUser}/
 GitUser="akubudakgrik"
 #IZIN SCRIPT
