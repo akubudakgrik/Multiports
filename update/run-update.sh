@@ -25,11 +25,11 @@ box=$(cat /etc/box)
 # CEK UPDATE
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
 Info1="${Green_font_prefix}($version)${Font_color_suffix}"
-Info2="${Green_font_prefix}(LATEST version)${Font_color_suffix}"
-Error="version ${Green_font_prefix}[$ver]${Font_color_suffix} available${Red_font_prefix}[Please Update]${Font_color_suffix}"
+Info2="${Green_font_prefix}(LATEST VERSION)${Font_color_suffix}"
+Error="Version ${Green_font_prefix}[$ver]${Font_color_suffix} available${Red_font_prefix}[Please Update]${Font_color_suffix}"
 version=$(cat /home/ver)
 new_version=$( curl https://raw.githubusercontent.com/${GitUser}/version/main/version.conf | grep $version )
-#Status version
+#Status Version
 if [ $version = $new_version ]; then
 sts="${Info2}"
 else
@@ -40,7 +40,7 @@ echo ""
 echo -e "   \e[$line--------------------------------------------------------\e[m"
 echo -e "   \e[$back_text                 \e[30m[\e[$box CHECK NEW UPDATE\e[30m ]                   \e[m"
 echo -e "   \e[$line--------------------------------------------------------\e[m"
-echo -e "   \e[$below version NOW >> $Info1"
+echo -e "   \e[$below VERSION NOW >> $Info1"
 echo -e "   \e[$below STATUS UPDATE >> $sts"
 echo -e ""
 echo -e "       \e[1;31mWould you like to proceed?\e[0m"
@@ -60,14 +60,14 @@ new_version=$( curl https://raw.githubusercontent.com/${GitUser}/version/main/ve
 if [ $version = $new_version ]; then
 clear
 echo ""
-echo -e "\e[1;31mChecking New version, Please Wait...!\e[m"
+echo -e "\e[1;31mChecking New Version, Please Wait...!\e[m"
 sleep 3
 clear
 echo -e "\e[1;31mUpdate Not Available\e[m"
 echo ""
 clear
 sleep 1
-echo -e "\e[1;36mYou Have The Latest version\e[m"
+echo -e "\e[1;36mYou Have The Latest Version\e[m"
 echo -e "\e[1;31mThankyou.\e[0m"
 sleep 2
 update
@@ -76,15 +76,15 @@ clear
 echo -e "\e[1;31mUpdate Available Now..\e[m"
 echo -e ""
 sleep 2
-echo -e "\e[1;36mStart Update For New version, Please Wait..\e[m"
+echo -e "\e[1;36mStart Update For New Version, Please Wait..\e[m"
 sleep 2
 clear
-echo -e "\e[0;32mGetting New version Script..\e[0m"
+echo -e "\e[0;32mGetting New Version Script..\e[0m"
 sleep 1
 echo ""
 # UPDATE RUN-UPDATE
 cd /usr/bin
-wget -O run-update "https://raw.githubusercontent.com/${GitUser}/version/main/update/run-update.sh"
+wget -O run-update "https://raw.githubusercontent.com/${GitUser}/multiport/main/update/run-update.sh"
 chmod +x run-update
 # RUN UPDATE
 echo ""
@@ -93,27 +93,27 @@ echo -e "\e[0;32mPlease Wait...!\e[0m"
 sleep 6
 clear
 echo ""
-echo -e "\e[0;32mNew version Downloading started!\e[0m"
+echo -e "\e[0;32mNew Version Downloading started!\e[0m"
 sleep 2
 cd /usr/bin
-wget -O update "https://raw.githubusercontent.com/${GitUser}/version/main/update/update.sh"
-wget -O run-update "https://raw.githubusercontent.com/${GitUser}/version/main/update/run-update.sh"
-wget -O message-ssh "https://raw.githubusercontent.com/${GitUser}/version/main/update/message-ssh.sh"
-wget -O change-port "https://raw.githubusercontent.com/${GitUser}/version/main/change.sh"
-wget -O system "https://raw.githubusercontent.com/${GitUser}/version/main/menu/system.sh"
-wget -O menu "https://raw.githubusercontent.com/${GitUser}/version/main/menu.sh"
-wget -O add-host "https://raw.githubusercontent.com/${GitUser}/version/main/system/add-host.sh"
-wget -O check-sc "https://raw.githubusercontent.com/${GitUser}/version/main/system/running.sh"
-wget -O cert "https://raw.githubusercontent.com/${GitUser}/version/main/cert.sh"
-wget -O trojaan "https://raw.githubusercontent.com/${GitUser}/version/main/menu/trojaan.sh"
-wget -O xraay "https://raw.githubusercontent.com/${GitUser}/version/main/menu/xraay.sh"
-wget -O xp "https://raw.githubusercontent.com/${GitUser}/version/main/xp.sh"
-wget -O port-xray "https://raw.githubusercontent.com/${GitUser}/version/main/change-port/port-xray.sh"
-wget -O themes "https://raw.githubusercontent.com/${GitUser}/version/main/menu/themes.sh"
-wget -O autobackup "https://raw.githubusercontent.com/${GitUser}/version/main/system/autobackup.sh"
-wget -O backup "https://raw.githubusercontent.com/${GitUser}/version/main/system/backup.sh"
-wget -O bckp "https://raw.githubusercontent.com/${GitUser}/version/main/system/bckp.sh"
-wget -O restore "https://raw.githubusercontent.com/${GitUser}/version/main/system/restore.sh"
+wget -O update "https://raw.githubusercontent.com/${GitUser}/multiport/main/update/update.sh"
+wget -O run-update "https://raw.githubusercontent.com/${GitUser}/multiport/main/update/run-update.sh"
+wget -O message-ssh "https://raw.githubusercontent.com/${GitUser}/multiport/main/update/message-ssh.sh"
+wget -O change-port "https://raw.githubusercontent.com/${GitUser}/multiport/main/change.sh"
+wget -O system "https://raw.githubusercontent.com/${GitUser}/multiport/main/menu/system.sh"
+wget -O menu "https://raw.githubusercontent.com/${GitUser}/multiport/main/menu.sh"
+wget -O add-host "https://raw.githubusercontent.com/${GitUser}/multiport/main/system/add-host.sh"
+wget -O check-sc "https://raw.githubusercontent.com/${GitUser}/multiport/main/system/running.sh"
+wget -O cert "https://raw.githubusercontent.com/${GitUser}/multiport/main/cert.sh"
+wget -O trojaan "https://raw.githubusercontent.com/${GitUser}/multiport/main/menu/trojaan.sh"
+wget -O xraay "https://raw.githubusercontent.com/${GitUser}/multiport/main/menu/xraay.sh"
+wget -O xp "https://raw.githubusercontent.com/${GitUser}/multiport/main/xp.sh"
+wget -O port-xray "https://raw.githubusercontent.com/${GitUser}/multiport/main/change-port/port-xray.sh"
+wget -O themes "https://raw.githubusercontent.com/${GitUser}/multiport/main/menu/themes.sh"
+wget -O autobackup "https://raw.githubusercontent.com/${GitUser}/multiport/main/system/autobackup.sh"
+wget -O backup "https://raw.githubusercontent.com/${GitUser}/multiport/main/system/backup.sh"
+wget -O bckp "https://raw.githubusercontent.com/${GitUser}/multiport/main/system/bckp.sh"
+wget -O restore "https://raw.githubusercontent.com/${GitUser}/multiport/main/system/restore.sh"
 chmod +x update
 chmod +x run-update
 chmod +x message-ssh
@@ -144,7 +144,7 @@ sleep 2
 echo -e "\e[0;32mPatching... OK!\e[0m"
 sleep 1
 echo ""
-echo -e "\e[0;32mSucces Update Script For New version\e[0m"
+echo -e "\e[0;32mSucces Update Script For New Version\e[0m"
 cd
 echo "$ver" > /home/ver
 rm -f update.sh

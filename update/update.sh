@@ -45,11 +45,11 @@ clear
 # CEK UPDATE
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
 Info1="${Green_font_prefix}[$version]${Font_color_suffix}"
-Info2="${Green_font_prefix}[LATEST version]${Font_color_suffix}"
-Error="version ${Green_font_prefix}[$ver]${Font_color_suffix} available${Red_font_prefix}[Please Update]${Font_color_suffix}"
+Info2="${Green_font_prefix}[LATEST VERSION]${Font_color_suffix}"
+Error="Version ${Green_font_prefix}[$ver]${Font_color_suffix} available${Red_font_prefix}[Please Update]${Font_color_suffix}"
 version=$(cat /home/ver)
 new_version=$( curl https://raw.githubusercontent.com/${GitUser}/version/main/version.conf | grep $version )
-#Status version
+#Status Version
 if [ $version = $new_version ]; then
 sts="${Info2}"
 else
@@ -63,11 +63,11 @@ echo ""
 echo -e "   \e[$line--------------------------------------------------------\e[m"
 echo -e "   \e[$back_text                 \e[30m[\e[$box UPDATE SCRIPT MENU\e[30m ]                 \e[m"
 echo -e "   \e[$line--------------------------------------------------------\e[m"
-echo -e "   \e[$below version NOW >> $Info1"
+echo -e "   \e[$below VERSION NOW >> $Info1"
 echo -e "   \e[$below STATUS UPDATE >> $sts"
 echo -e ""
 echo -e "     \e[$number 1.\e[m \e[$below Change Banner SSH\e[m"
-echo -e "     \e[$number 2.\e[m \e[$below Check Update/New version Script\e[m"
+echo -e "     \e[$number 2.\e[m \e[$below Check Update/New Version Script\e[m"
 echo -e ""
 echo -e "   \e[$line--------------------------------------------------------\e[m"
 echo -e "   \e[$back_text \e[$box x)   MENU                                             \e[m"
