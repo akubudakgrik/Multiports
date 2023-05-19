@@ -50,7 +50,7 @@ echo -e "     [x]  Exit"
 echo -e "======================================"                                                                                                          
 echo -e ""
 read -p "     Select From Options [1-4 or x] :  " AutoKill
-read -p "     Multilogin Maximum Number Of Allowed: " max
+read -p "     Multilogin Maximum Number Of allowed: " max
 echo -e ""
 case $AutoKill in
                 1)
@@ -63,7 +63,7 @@ case $AutoKill in
                 echo -e ""
                 echo -e "======================================"
                 echo -e ""
-                echo -e "      Allowed MultiLogin : $max"
+                echo -e "      allowed MultiLogin : $max"
                 echo -e "      AutoKill Every     : 5 Minutes"      
                 echo -e ""
                 echo -e "======================================"                                                                                                                                 
@@ -79,7 +79,7 @@ case $AutoKill in
                 echo -e ""
                 echo -e "======================================"
                 echo -e ""
-                echo -e "      Allowed MultiLogin : $max"
+                echo -e "      allowed MultiLogin : $max"
                 echo -e "      AutoKill Every     : 10 Minutes"
                 echo -e ""
                 echo -e "======================================"
@@ -95,7 +95,7 @@ case $AutoKill in
                 echo -e ""
                 echo -e "======================================"
                 echo -e ""
-                echo -e "      Allowed MultiLogin : $max"
+                echo -e "      allowed MultiLogin : $max"
                 echo -e "      AutoKill Every     : 15 Minutes"
                 echo -e ""
                 echo -e "======================================"

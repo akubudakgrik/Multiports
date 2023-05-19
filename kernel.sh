@@ -8,16 +8,16 @@ OS=$ID
 # Memulai Update Kernel
 echo "Start Updating Kernel"
 
-# Ubuntu Version
+# Ubuntu version
 if [[ $OS == 'ubuntu' ]]; then
 wget https://raw.githubusercontent.com/pimlie/ubuntu-mainline-kernel.sh/master/ubuntu-mainline-kernel.sh
 install ubuntu-mainline-kernel.sh /usr/local/bin/
 rm -f ubuntu-mainline-kernel.sh
 ubuntu-mainline-kernel.sh -c
 
-# Checking Version
+# Checking version
 if [ $ver == $now ]; then
-echo "Your Kernel Is The Latest Version"A
+echo "Your Kernel Is The Latest version"A
 rm -f /usr/bin/ubuntu-mainline-kernel.sh
 exit 0
 else
@@ -25,14 +25,14 @@ printf "y" | ubuntu-mainline-kernel.sh -i
 rm -f /usr/bin/ubuntu-mainline-kernel.sh
 fi
 
-# Debian Version
+# Debian version
 elif [[ $OS == "debian" ]]; then
 ver=(`apt-cache search linux-image | grep "^linux-image" | cut -d'-' -f 3-4 |tail -n1`)
 now=$(uname -r | cut -d "-" -f 1-2)
 
 # Checking Kernel
 if [ $ver == $now ]; then
-echo "Your Kernel Is The Latest Version"
+echo "Your Kernel Is The Latest version"
 exit 0
 else
 apt install linux-image-$ver-amd64

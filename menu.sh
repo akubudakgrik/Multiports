@@ -42,11 +42,11 @@ clear
 # CEK UPDATE
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
 Info1="${Green_font_prefix}$version${Font_color_suffix}"
-Info2="${Green_font_prefix} Latest Version ${Font_color_suffix}"
-Error=" Version ${Green_font_prefix}[$ver]${Font_color_suffix} Available${Red_font_prefix}[Update]${Font_color_suffix}"
+Info2="${Green_font_prefix} Latest version ${Font_color_suffix}"
+Error=" version ${Green_font_prefix}[$ver]${Font_color_suffix} Available${Red_font_prefix}[Update]${Font_color_suffix}"
 version=$(cat /home/ver)
 new_version=$( curl https://raw.githubusercontent.com/${GitUser}/version/main/version.conf | grep $version )
-#Status Version
+#Status version
 if [ $version = $new_version ]; then
 stl="${Info2}"
 else
@@ -193,7 +193,7 @@ echo -e "  \e[$number (•8)\e[m \e[$below REBOOT VPS\e[m           \e[$number (
 echo -e ""
 echo -e "  \e[$below[Ctrl + C] For exit from main menu\e[m"
 echo -e " \e[$line╒════════════════════════════════════════════════════════════╕\e[m"
-echo -e "  \e[$below Version Name         : $Info1"
+echo -e "  \e[$below version Name         : $Info1"
 echo -e "  \e[$below Autoscript By        : akubudakgerik"
 echo -e "  \e[$below Certificate Status   : Expired in $certifacate days"
 echo -e "  \e[$below Client Name          : $username"
