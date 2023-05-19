@@ -74,14 +74,14 @@ export tipeprosesor="$(awk -F ': | @' '/model name|Processor|^cpu model|chip typ
 # // SHELL VER
 export shellversion=""
 export shellversion=Bash
-export shellversion+=" version" 
-export shellversion+=" ${BASH_version/-*}" 
+export shellversion+=" Version" 
+export shellversion+=" ${BASH_VERSION/-*}" 
 export versibash=$shellversion
 
 # // OS INFO
 source /etc/os-release
-export Versi_OS=$version
-export ver=$version_ID
+export Versi_OS=$VERSION
+export ver=$VERSION_ID
 export Tipe=$NAME
 export URL_SUPPORT=$HOME_URL
 export basedong=$ID
@@ -126,7 +126,7 @@ echo -e "VPS Type    : $typevps"
 echo -e "OS Arch     : $tipeos2"
 echo -e "Hostname    : $HOSTNAME"
 echo -e "OS Name     : $Tipe"
-echo -e "OS version  : $Versi_OS"
+echo -e "OS Version  : $Versi_OS"
 echo -e "OS URL      : $URL_SUPPORT"
 echo -e "OS BASE     : $basedong"
 echo -e "OS TYPE     : Linux / Unix"
