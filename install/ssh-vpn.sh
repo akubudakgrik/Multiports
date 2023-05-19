@@ -14,10 +14,10 @@ ver=$VERSION_ID
 country="MY"
 state="Sabah"
 locality="Kota_Kinabalu"
-organization="@aKuBuDaKgEriK"
-organizationalunit="@aKuBuDaKgEriK"
-commonname="aKuBuDaKgEriK"
-email="admin@aKuBuDaKgEriK.com"
+organization="@akubudakgerik"
+organizationalunit="@akubudakgerik"
+commonname="akubudakgerik"
+email="admin@akubudakgerik.com"
 
 # // simple password minimal
 wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/${GitUser}/multiport/main/password"
