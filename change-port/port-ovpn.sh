@@ -224,7 +224,7 @@ END
 cat > /etc/systemd/system/ohp.service <<END
 [Unit]
 Description=Direct Squid Proxy For OpenVPN TCP
-Documentation=https://t.me/akubudakgerik
+Documentation=https://t.me/aKuBuDaKgEriK
 Wants=network.target
 After=network.target
 
