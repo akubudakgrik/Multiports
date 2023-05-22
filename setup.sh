@@ -1,6 +1,6 @@
 #!/bin/bash
 #wget https://github.com/${GitUser}/
-GitUser="akubudakgrik"
+GitUser="akubudakmerah"
 # Color Validation
 Lred='\e[1;91m'
 Lgreen='\e[92m'
@@ -21,7 +21,7 @@ echo ''
 echo "                                                              "
 echo -e "$Lyellow                  ⚡ PREMIUM AUTOSCRIPT ⚡"$NC
 echo -e "$green.........................................................."$NC
-echo -e "$Lyellow                  Autoscript By akubudakgerik"$NC
+echo -e "$Lyellow                  Autoscript By VPNBUDAKGERIK"$NC
 echo -e "$Lyellow                    CONTACT TELEGRAM"$NC
 echo -e "$Lyellow                       @akubudakgerik"$NC
 echo -e "$green.........................................................."$NC
@@ -212,7 +212,7 @@ clear
 echo " "
 echo "Installation has been completed!!"
 echo " "
-echo -e "\e[1;32m══════════════════Autoscript akubudakgerik══════════════════\e[0m" | tee -a log-install.txt
+echo -e "\e[1;32m══════════════════Autoscript VPNBUDAKGERIK══════════════════\e[0m" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
@@ -268,13 +268,13 @@ echo "   - Auto Delete Expired Account" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
-echo -e "\e[1;32m══════════════════Autoscript By akubudakgerik══════════════════\e[0m" | tee -a log-install.txt
+echo -e "\e[1;32m══════════════════Autoscript By VPNBUDAKGERIK══════════════════\e[0m" | tee -a log-install.txt
 sleep 7
 clear
 echo ""
 echo -e "    \e[1;32m.------------------------------------------.\e[0m"
 echo -e "    \e[1;32m|     SUCCESFULLY INSTALLED THE SCRIPT     |\e[0m"
-echo -e "    \e[1;32m|         Premium By akubudakgerik             |\e[0m"
+echo -e "    \e[1;32m|         Premium By VPNBUDAKGERIK             |\e[0m"
 echo -e "    \e[1;32m'------------------------------------------'\e[0m"
 echo ""
 echo -e "   \e[1;32mYour VPS Will Be Automatical Reboot In 5 seconds\e[0m"
