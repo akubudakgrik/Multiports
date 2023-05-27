@@ -54,7 +54,7 @@ rm -f /etc/systemd/system/ohps.service
 cat > /etc/systemd/system/ohps.service <<END
 [Unit]
 Description=Direct Squid Proxy For open-ssh
-Documentation=https://t.me/akubudakgerik
+Documentation=https://t.me/VPN-BUDAKGERIK
 Wants=network.target
 After=network.target
 
@@ -87,7 +87,7 @@ rm -f /etc/systemd/system/ohpd.service
 cat > /etc/systemd/system/ohpd.service <<END
 [Unit]
 Description=Direct Squid Proxy For Dropbear 
-Documentation=https://t.me/akubudakgerik
+Documentation=https://t.me/VPN-BUDAKGERIK
 Wants=network.target
 After=network.target
 
