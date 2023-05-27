@@ -1,4 +1,4 @@
-# Created by akubudakgerik
+# Created by VPN-BUDAKGERIK
 #wget https://github.com/${GitUser}/
 GitUser="akubudakgrik"
 #IZIN SCRIPT
