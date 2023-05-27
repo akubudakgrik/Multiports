@@ -16,7 +16,7 @@ state="Sabah"
 locality="Kota_Kinabalu"
 organization="@akubudakgerik"
 organizationalunit="@akubudakgerik"
-commonname="akubudakgerik"
+commonname="VPN-BUDAKGERIK"
 email="admin@akubudakgerik.com"
 
 # // simple password minimal

@@ -136,7 +136,7 @@ cat> /usr/local/etc/xray/config.json << END
                         "xver": 1
                     },
                     {
-                        "path": "/trickers-vmesswstls", # // VLESS WS TLS
+                        "path": "/akubudakgerik-vmesswstls", # // VLESS WS TLS
                         "dest": 1213,
                         "xver": 1
                     },
@@ -611,7 +611,7 @@ cat> /usr/local/etc/xray/vmess.json << END
                 "security": "none",
                 "wsSettings": {
                     "acceptProxyProtocol": true,
-                    "path": "/trickers-vmesswstls"
+                    "path": "/akubudakgerik-vmesswstls"
                 }
             }
         }
@@ -721,7 +721,7 @@ cat> /usr/local/etc/xray/vmessnone.json << END
          "network": "ws",
             "wsSettings": {
               "acceptProxyProtocol": true,
-                "path": "/trickers-vmesswsntls"
+                "path": "/akubudakgerik-vmesswsntls"
                 }
             }
         }
@@ -1059,7 +1059,7 @@ cat> /usr/local/etc/xray/none.json << END
             "xver": 1
           },
           {
-            "path": "/trickers-vmesswsntls", # // VMESS NONE
+            "path": "/akubudakgerik-vmesswsntls", # // VMESS NONE
             "dest": 1302,
             "xver": 1
           },
