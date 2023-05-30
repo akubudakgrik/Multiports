@@ -1,5 +1,5 @@
 clear
-echo -e"\eInstalling Websocket-SSH Python\e[om"
+echo Installing Websocket-SSH Python
 sleep 1
 echo Sila Tunggu Sebentar...
 sleep 0.5
