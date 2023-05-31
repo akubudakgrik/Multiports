@@ -30,7 +30,7 @@ echo -e "\e[32mloading...\e[0m"
 clear
 echo start
 sleep 0.5
-source /var/lib/premium-script/ipvps.conf
+source /var/lib/multiport-script/ipvps.conf
 domain=$(cat /usr/local/etc/xray/domain)
 emailcf=$(cat /usr/local/etc/xray/email)
 clear
