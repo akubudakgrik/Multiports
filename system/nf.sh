@@ -203,7 +203,7 @@ function MediaUnlockTest_TikTok(){
 
 function MediaUnlockTest_YouTube() {
     echo -n -e " YouTube\t\t\t\t->\c";
-    local tmpresult=$(curl -${1} -s -H "Accept-Language: en" "https://www.youtube.com/premium")
+    local tmpresult=$(curl -${1} -s -H "Accept-Language: en" "https://www.youtube.com/multiport")
     local region=$(curl --user-agent "${UA_Browser}" -${1} -sL "https://www.youtube.com/red" | sed 's/,/\n/g' | grep "countryCode" | cut -d '"' -f4)
 	if [ -n "$region" ]; then
         sleep 0
@@ -216,9 +216,9 @@ function MediaUnlockTest_YouTube() {
         return;
     fi
     
-    local result=$(echo $tmpresult | grep 'Premium is not available in your country')
+    local result=$(echo $tmpresult | grep 'multiport is not available in your country')
     if [ -n "$result" ]; then
-        echo -n -e "\r YouTube\t\t\t\t: ${Font_Red}No Premium${Font_Suffix}(Region: ${region})${Font_Suffix} \n"
+        echo -n -e "\r YouTube\t\t\t\t: ${Font_Red}No multiport${Font_Suffix}(Region: ${region})${Font_Suffix} \n"
         return;
 		
     fi

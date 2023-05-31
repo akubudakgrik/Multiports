@@ -43,7 +43,7 @@ cp shadow /etc/
 cp gshadow /etc/
 cp -r wireguard /etc/
 cp ss.conf /etc/shadowsocks-libev/ss.conf
-cp -r premium-script /var/lib/
+cp -r multiport-script /var/lib/
 cp -r xray /usr/local/etc/
 cp -r trojan-go /etc/
 cp -r shadowsocksr /usr/local/
