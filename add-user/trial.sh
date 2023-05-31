@@ -37,7 +37,7 @@ line=$(cat /etc/line)
 back_text=$(cat /etc/back)
 clear
 IP=$(wget -qO- icanhazip.com);
-source /var/lib/premium-script/ipvps.conf
+source /var/lib/multiport-script/ipvps.conf
 if [[ "$IP" = "" ]]; then
 domain=$(cat /usr/local/etc/xray/domain)
 else

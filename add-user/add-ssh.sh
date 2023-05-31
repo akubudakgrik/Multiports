@@ -54,7 +54,7 @@ read -p "   Bug SNI/Host (Example : m.facebook.com) : " sni
 read -p "   Expired (days): " masaaktif
 
 IP=$(wget -qO- icanhazip.com);
-source /var/lib/premium-script/ipvps.conf
+source /var/lib/multiport-script/ipvps.conf
 if [[ "$IP" = "" ]]; then
 domain=$(cat /usr/local/etc/xray/domain)
 else
