@@ -11,8 +11,8 @@ PASS = ''
 # CONST
 BUFLEN = 4096 * 4
 TIMEOUT = 60
-DEFAULT_HOST = '127.0.0.1:1194'
-RESPONSE = 'HTTP/1.1 101 <b><u><font color="purple"> (OVPN HTTPS) Script By VPN-BUDAKGERIK</font></b>\r\n\r\n\r\n\r\nContent-Length: 104857600000\r\n\r\n'
+DEFAULT_HOST = '127.0.0.1:109'
+RESPONSE = 'HTTP/1.1 101 <b><u><font color="blue">(HTTP)Script By comingsoon</font></b>\r\n\r\n\r\n\r\nContent-Length: 104857600000\r\n\r\n'
 
 class Server(threading.Thread):
     def __init__(self, host, port):
