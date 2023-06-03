@@ -247,9 +247,9 @@ else
 #echo -e " Websocket OpenVPN(HTTP) : "$red"not running (Error)"$NC" "
 fi
 
-#status="$(systemctl show ohps.service --no-page)"
-#status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)
-#if [ "${status_text}" == "active" ]
+status="$(systemctl show ohps.service --no-page)"
+status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)
+if [ "${status_text}" == "active" ]
 then
 echo -e " OHP-SSH                 : "$green"running"$NC" ✓"
 else
