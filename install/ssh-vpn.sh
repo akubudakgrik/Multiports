@@ -1,6 +1,6 @@
 # ==================================================
 #wget https://github.com/${GitUser}/
-GitUser="akubudakgrik"
+GitUser="vpn-script"
 
 # // initializing var
 export DEBIAN_FRONTEND=noninteractive

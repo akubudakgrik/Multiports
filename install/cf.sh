@@ -1,5 +1,5 @@
 #wget https://github.com/${GitUser}/
-GitUser="akubudakgrik"
+GitUser="vpn-script"
 #IZIN SCRIPT
 MYIP=$(curl -sS ipv4.icanhazip.com)
 # Valid Script
@@ -57,6 +57,6 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      -H "Content-Type: application/json" \
      --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}')
 echo "Host : $SUB_DOMAIN"
-echo "IP=" >> /var/lib/multiport-script/ipvps.conf
+echo "IP=" >> /var/lib/premium-script/ipvps.conf
 echo $SUB_DOMAIN > /root/domain
 rm -f /root/cf.sh

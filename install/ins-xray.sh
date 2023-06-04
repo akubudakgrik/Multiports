@@ -1,6 +1,6 @@
 #!/bin/bash
 # // wget https://github.com/${GitUser}/
-GitUser="akubudakgrik"
+GitUser="vpn-script"
 
 # // MY IPVPS
 export MYIP=$(curl -sS ipv4.icanhazip.com)
@@ -131,17 +131,17 @@ cat> /usr/local/etc/xray/config.json << END
                         "xver": 1
                     },
                     {
-                        "path": "/trickers-vlesswstls", # // VMESS WS TLS
+                        "path": "/budakgerik-vlesswstls", # // VMESS WS TLS
                         "dest": 1212,
                         "xver": 1
                     },
                     {
-                        "path": "/akubudakgerik-vmesswstls", # // VLESS WS TLS
+                        "path": "/budakgerik-vmesswstls", # // VLESS WS TLS
                         "dest": 1213,
                         "xver": 1
                     },
                     {
-                        "path": "/trickers-trojanwstls", # // TROJAN WS TLS
+                        "path": "/budakgerik-trojanwstls", # // TROJAN WS TLS
                         "dest": 1214,
                         "xver": 1
                     }
@@ -387,7 +387,7 @@ cat> /usr/local/etc/xray/vless.json << END
                 "security": "none",
                 "wsSettings": {
                     "acceptProxyProtocol": true,
-                    "path": "/trickers-vlesswstls"
+                    "path": "/budakgerik-vlesswstls"
                 }
             }
         }
@@ -497,7 +497,7 @@ cat> /usr/local/etc/xray/vlessnone.json << END
          "network": "ws",
             "wsSettings": {
               "acceptProxyProtocol": true,
-                "path": "/trickers-vlesswsntls"
+                "path": "/budakgerik-vlesswsntls"
 
                 }
             }
@@ -611,7 +611,7 @@ cat> /usr/local/etc/xray/vmess.json << END
                 "security": "none",
                 "wsSettings": {
                     "acceptProxyProtocol": true,
-                    "path": "/akubudakgerik-vmesswstls"
+                    "path": "/budakgerik-vmesswstls"
                 }
             }
         }
@@ -721,7 +721,7 @@ cat> /usr/local/etc/xray/vmessnone.json << END
          "network": "ws",
             "wsSettings": {
               "acceptProxyProtocol": true,
-                "path": "/akubudakgerik-vmesswsntls"
+                "path": "/budakgerik-vmesswsntls"
                 }
             }
         }
@@ -833,7 +833,7 @@ cat> /usr/local/etc/xray/trojan.json << END
            "network": "ws",
            "wsSettings": {
              "acceptProxyProtocol": true,
-               "path": "/trickers-trojanwstls"
+               "path": "/budakgerik-trojanwstls"
              }
           }
        }
@@ -944,7 +944,7 @@ cat> /usr/local/etc/xray/trojannone.json << END
            "network": "ws",
            "wsSettings": {
              "acceptProxyProtocol": true,
-               "path": "/trickers-trojanwsntls"
+               "path": "/budakgerik-trojanwsntls"
              }
           }
        }
@@ -1054,17 +1054,17 @@ cat> /usr/local/etc/xray/none.json << END
             "xver": 1
           },
           {
-            "path": "/trickers-vlesswsntls", # // VLESS NONE
+            "path": "/budakgerik-vlesswsntls", # // VLESS NONE
             "dest": 1301,
             "xver": 1
           },
           {
-            "path": "/akubudakgerik-vmesswsntls", # // VMESS NONE
+            "path": "/budakgerik-vmesswsntls", # // VMESS NONE
             "dest": 1302,
             "xver": 1
           },
           {
-             "path": "/trickers-trojanwsntls", # // TROJAN NONE
+             "path": "/budakgerik-trojanwsntls", # // TROJAN NONE
             "dest": 1303,
             "xver": 1
           }
