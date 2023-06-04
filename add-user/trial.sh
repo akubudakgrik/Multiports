@@ -1,5 +1,5 @@
 #wget https://github.com/${GitUser}/
-GitUser="akubudakgrik"
+GitUser="vpn-script"
 #IZIN SCRIPT
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
@@ -37,7 +37,7 @@ line=$(cat /etc/line)
 back_text=$(cat /etc/back)
 clear
 IP=$(wget -qO- icanhazip.com);
-source /var/lib/multiport-script/ipvps.conf
+source /var/lib/premium-script/ipvps.conf
 if [[ "$IP" = "" ]]; then
 domain=$(cat /usr/local/etc/xray/domain)
 else
