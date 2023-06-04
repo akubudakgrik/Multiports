@@ -1,6 +1,6 @@
 #!/bin/bash
 #wget https://github.com/${GitUser}/
-GitUser="akubudakgrik"
+GitUser="vpn-script"
 # Color Validation
 Lred='\e[1;91m'
 Lgreen='\e[92m'
@@ -19,7 +19,7 @@ echo ''
 clear
 echo ''
 echo "                                                              "
-echo -e "$Lyellow                  ⚡ multiport AUTOSCRIPT ⚡"$NC
+echo -e "$Lyellow                  ⚡ PREMIUM AUTOSCRIPT ⚡"$NC
 echo -e "$green.........................................................."$NC
 echo -e "$Lyellow                  Autoscript By VPN-BUDAKGERIK"$NC
 echo -e "$Lyellow                    CONTACT TELEGRAM"$NC
@@ -84,7 +84,7 @@ fi
 clear
 echo -e "\e[32mloading...\e[0m"
 clear
-mkdir /var/lib/multiport-script;
+mkdir /var/lib/premium-script;
 default_email=$( curl https://raw.githubusercontent.com/${GitUser}/email/main/default.conf )
 clear
 #Nama penyedia script
@@ -125,7 +125,7 @@ echo ""
 if [[ $host == "1" ]]; then
 echo -e "   \e[1;32mPlease enter your subdomain "
 read -p "   Subdomain: " host1
-echo "IP=" >> /var/lib/multiport-script/ipvps.conf
+echo "IP=" >> /var/lib/premium-script/ipvps.conf
 echo $host1 > /root/domain
 echo ""
 elif [[ $host == "2" ]]; then
@@ -274,7 +274,7 @@ clear
 echo ""
 echo -e "    \e[1;32m.------------------------------------------.\e[0m"
 echo -e "    \e[1;32m|     SUCCESFULLY INSTALLED THE SCRIPT     |\e[0m"
-echo -e "    \e[1;32m|         multiport By VPN-BUDAKGERIK             |\e[0m"
+echo -e "    \e[1;32m|         Premium By VPN-BUDAKGERIK             |\e[0m"
 echo -e "    \e[1;32m'------------------------------------------'\e[0m"
 echo ""
 echo -e "   \e[1;32mYour VPS Will Be Automatical Reboot In 5 seconds\e[0m"

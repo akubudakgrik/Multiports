@@ -1,6 +1,6 @@
 #!/bin/bash
 #wget https://github.com/${GitUser}/
-GitUser="akubudakgrik"
+GitUser="vpn-script"
 #IZIN SCRIPT
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
@@ -30,7 +30,7 @@ echo -e "\e[32mloading...\e[0m"
 clear
 echo start
 sleep 0.5
-source /var/lib/multiport-script/ipvps.conf
+source /var/lib/premium-script/ipvps.conf
 domain=$(cat /usr/local/etc/xray/domain)
 emailcf=$(cat /usr/local/etc/xray/email)
 clear
