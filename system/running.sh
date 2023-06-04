@@ -3,7 +3,7 @@ export green="\e[0;32m"
 export NC="\e[0m"
 
 # // GIT USER
-export GitUser="akubudakgrik"
+export GitUser="vpn-script"
 export MYIP=$(wget -qO- icanhazip.com);
 
 # // VPS INFO
@@ -220,31 +220,31 @@ else
 echo -e " DropBear                : "$red"not running (Error)"$NC" "
 fi
 
-#status="$(systemctl show ws-http.service --no-page)"
-#status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)
-#if [ "${status_text}" == "active" ]
+status="$(systemctl show ws-http.service --no-page)"
+status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)
+if [ "${status_text}" == "active" ]
 then
-#echo -e " Websocket SSH(HTTP)     : "$green"running"$NC" ✓"
+echo -e " Websocket SSH(HTTP)     : "$green"running"$NC" ✓"
 else
-#echo -e " Websocket SSH(HTTP)     : "$red"not running (Error)"$NC" "
+echo -e " Websocket SSH(HTTP)     : "$red"not running (Error)"$NC" "
 fi
 
-#status="$(systemctl show ws-https.service --no-page)"
-#status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)
-#if [ "${status_text}" == "active" ]
+status="$(systemctl show ws-https.service --no-page)"
+status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)
+if [ "${status_text}" == "active" ]
 then
-#echo -e " Websocket SSL(HTTPS)    : "$green"running"$NC" ✓"
+echo -e " Websocket SSL(HTTPS)    : "$green"running"$NC" ✓"
 else
-#echo -e " Websocket SSL(HTTPS)    : "$red"not running (Error)"$NC" "
+echo -e " Websocket SSL(HTTPS)    : "$red"not running (Error)"$NC" "
 fi
 
-#status="$(systemctl show ws-ovpn.service --no-page)"
-#status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)
-#if [ "${status_text}" == "active" ]
+status="$(systemctl show ws-ovpn.service --no-page)"
+status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)
+if [ "${status_text}" == "active" ]
 then
-#echo -e " Websocket OpenVPN(HTTP) : "$green"running"$NC" ✓"
+echo -e " Websocket OpenVPN(HTTP) : "$green"running"$NC" ✓"
 else
-#echo -e " Websocket OpenVPN(HTTP) : "$red"not running (Error)"$NC" "
+echo -e " Websocket OpenVPN(HTTP) : "$red"not running (Error)"$NC" "
 fi
 
 status="$(systemctl show ohps.service --no-page)"

@@ -1,5 +1,5 @@
 #wget https://github.com/${GitUser}/
-GitUser="akubudakgrik"
+GitUser="vpn-script"
 #IZIN SCRIPT
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
@@ -43,7 +43,7 @@ cp shadow /etc/
 cp gshadow /etc/
 cp -r wireguard /etc/
 cp ss.conf /etc/shadowsocks-libev/ss.conf
-cp -r multiport-script /var/lib/
+cp -r premium-script /var/lib/
 cp -r xray /usr/local/etc/
 cp -r trojan-go /etc/
 cp -r shadowsocksr /usr/local/

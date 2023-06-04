@@ -6,7 +6,7 @@ export BLUE='\e[0;34m'
 export NC='\e[0m'
 
 #wget https://github.com/${GitUser}/
-GitUser="akubudakgrik"
+GitUser="vpn-script"
 
 # // MY IPVPS
 export MYIP=$(curl -sS ipv4.icanhazip.com)
@@ -49,7 +49,7 @@ echo ""
 
 echo "Please Input Your Pointing Domain In Cloudflare "
 read -rp "Domain/Host: " -e host
-echo "IP=$host" >> /var/lib/multiport-script/ipvps.conf
+echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
 echo "$host" > /usr/local/etc/xray/domain
 
 export dom=$(cat /etc/xray/domain)

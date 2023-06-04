@@ -1,6 +1,6 @@
 #!/bin/bash
 #wget https://github.com/${GitUser}/
-GitUser="akubudakgrik"
+GitUser="vpn-script"
 #IZIN SCRIPT
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
@@ -42,7 +42,7 @@ cp /etc/shadow backup/
 cp /etc/gshadow backup/
 cp -r /etc/wireguard backup/wireguard
 cp /etc/shadowsocks-libev/akun.conf backup/ss.conf
-cp -r /var/lib/multiport-script/ backup/multiport-script
+cp -r /var/lib/premium-script/ backup/premium-script
 cp -r /usr/local/etc/xray backup/xray
 cp -r /etc/trojan-go backup/trojan-go
 cp -r /usr/local/shadowsocksr/ backup/shadowsocksr
