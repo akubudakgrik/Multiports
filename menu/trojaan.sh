@@ -1,5 +1,5 @@
 #wget https://github.com/${GitUser}/
-GitUser="akubudakgrik"
+GitUser="vpn-script"
 
 # // IZIN SCRIPT
 export MYIP=$(curl -sS ipv4.icanhazip.com)
@@ -30,7 +30,7 @@ clear
 
 # // PROVIDED && MY IP
 export MYIP=$(wget -qO- ifconfig.me/ip);
-source /var/lib/multiport-script/ipvps.conf
+source /var/lib/premium-script/ipvps.conf
 export creditt=$(cat /root/provided)
 
 # // BANNER COLOUR
@@ -126,7 +126,7 @@ echo -e "\e[31m❌ Ddos Server"
 echo -e "\e[31m❌ Mining Bitcoins"
 echo -e "\e[31m❌ Abuse Usage"
 echo -e "\e[31m❌ Multi-Login ID"
-echo -e "\e[31m❌ Sharing multiport Config\e[m"
+echo -e "\e[31m❌ Sharing Premium Config\e[m"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Link Trojan : ${trojanlink}"
 echo -e "\e[$line═════════════════════════════════\e[m"
@@ -196,7 +196,7 @@ echo -e "\e[31m❌ Ddos Server"
 echo -e "\e[31m❌ Mining Bitcoins"
 echo -e "\e[31m❌ Abuse Usage"
 echo -e "\e[31m❌ Multi-Login ID"
-echo -e "\e[31m❌ Sharing multiport Config\e[m"
+echo -e "\e[31m❌ Sharing Premium Config\e[m"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Link Trojan : ${trojanlink}"
 echo -e "\e[$line═════════════════════════════════\e[m"
@@ -336,7 +336,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/usr/local/etc/xray/akunxtr.conf")
 			read -rp "Select one client [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
 		fi
 	done
-export patch=/akubudakgerik-xray
+export patch=/xray
 export user=$(grep -E "^### " "/usr/local/etc/xray/akunxtr.conf" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
 export harini=$(grep -E "^### " "/usr/local/etc/xray/akunxtr.conf" | cut -d ' ' -f 4 | sed -n "${CLIENT_NUMBER}"p)
 export exp=$(grep -E "^### " "/usr/local/etc/xray/akunxtr.conf" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
@@ -365,7 +365,7 @@ echo -e "\e[31m❌ Ddos Server"
 echo -e "\e[31m❌ Mining Bitcoins"
 echo -e "\e[31m❌ Abuse Usage"
 echo -e "\e[31m❌ Multi-Login ID"
-echo -e "\e[31m❌ Sharing multiport Config\e[m"
+echo -e "\e[31m❌ Sharing Premium Config\e[m"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Link Trojan  : ${trojanlink}"
 echo -e "\e[$line═════════════════════════════════\e[m"
@@ -438,8 +438,8 @@ until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
 			exit 1
 		fi
 	done
-export patchtls=/trickers-trojanwstls
-export patchnone=/trickers-trojanwsntls
+export patchtls=/budakgerik-trojanwstls
+export patchnone=/budakgerik-trojanwsntls
 read -p "   Bug Address (Example: www.google.com) : " address
 read -p "   Bug SNI (Example : m.facebook.com) : " sni
 read -p "   Expired (days) : " masaaktif
@@ -493,7 +493,7 @@ echo -e "\e[31m❌ Ddos Server"
 echo -e "\e[31m❌ Mining Bitcoins"
 echo -e "\e[31m❌ Abuse Usage"
 echo -e "\e[31m❌ Multi-Login ID"
-echo -e "\e[31m❌ Sharing multiport Config\e[m"
+echo -e "\e[31m❌ Sharing Premium Config\e[m"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Link TLS        : ${trojanlink1}"
 echo -e "\e[$line═════════════════════════════════\e[m"
@@ -525,8 +525,8 @@ export masaaktif="1"
 export exp=$(date -d "$masaaktif days" +"%Y-%m-%d")
 export user=Trial`</dev/urandom tr -dc X-Z0-9 | head -c4`
 
-export patchtls=/trickers-trojanwstls
-export patchnone=/trickers-trojanwsntls
+export patchtls=/budakgerik-trojanwstls
+export patchnone=/budakgerik-trojanwsntls
 
 read -p "   Bug Address (Example: www.google.com) : " address
 read -p "   Bug SNI (Example : m.facebook.com) : " sni
@@ -579,7 +579,7 @@ echo -e "\e[31m❌ Ddos Server"
 echo -e "\e[31m❌ Mining Bitcoins"
 echo -e "\e[31m❌ Abuse Usage"
 echo -e "\e[31m❌ Multi-Login ID"
-echo -e "\e[31m❌ Sharing multiport Config\e[m"
+echo -e "\e[31m❌ Sharing Premium Config\e[m"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Link TLS        : ${trojanlink1}"
 echo -e "\e[$line═════════════════════════════════\e[m"
@@ -723,8 +723,8 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#trws " "/usr/local/etc/xray/trojan.json")
 			read -rp "Select one client [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
 		fi
 	done
-export patchtls=/trickers-trojanwstls
-export patchnone=/trickers-trojanwsntls
+export patchtls=/budakgerik-trojanwstls
+export patchnone=/budakgerik-trojanwsntls
 export user=$(grep -E "^#trws " "/usr/local/etc/xray/trojan.json" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
 export harini=$(grep -E "^#trws " "/usr/local/etc/xray/trojan.json" | cut -d ' ' -f 4 | sed -n "${CLIENT_NUMBER}"p)
 export exp=$(grep -E "^#trws " "/usr/local/etc/xray/trojan.json" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
@@ -760,7 +760,7 @@ echo -e "\e[31m❌ Ddos Server"
 echo -e "\e[31m❌ Mining Bitcoins"
 echo -e "\e[31m❌ Abuse Usage"
 echo -e "\e[31m❌ Multi-Login ID"
-echo -e "\e[31m❌ Sharing multiport Config\e[m"
+echo -e "\e[31m❌ Sharing Premium Config\e[m"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Link TLS        : ${trojanlink1}"
 echo -e "\e[$line═════════════════════════════════\e[m"

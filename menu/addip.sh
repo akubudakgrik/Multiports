@@ -21,7 +21,7 @@ CYAN='\e[36m'
 LIGHT='\033[0;37m'
 tokengit=$(cat /etc/adminip/access.conf)
 MYIP=$(wget -qO- ipinfo.io/ip);
-adminip=$( curl -sS https://raw.githubusercontent.com/akubudakgrik/allow/main/adminipvps | grep $MYIP )
+adminip=$( curl -sS https://raw.githubusercontent.com/vpn-script/allow/main/adminipvps | grep $MYIP )
 if [ $adminip = $MYIP ]; then
 echo -e "${green}Permission Accepted...${NC}"
 else
@@ -64,7 +64,7 @@ rm -rf /root/allow
 read -p "IP VPS      : " daftar
 echo -e "[ ${Lyellow}INFO${NC} ] Checking the IPVPS if Already Registered"
 sleep 1
-cek=$( curl -sS https://raw.githubusercontent.com/akubudakgrik/allow/main/ipvps.conf | awk '{print $5}' | grep $daftar )
+cek=$( curl -sS https://raw.githubusercontent.com/vpn-script/allow/main/ipvps.conf | awk '{print $5}' | grep $daftar )
 if [[ $daftar = $cek ]]; then
 echo -e "\e[1;31m The IP VPS Has Been Registered\e[0m"
 sleep 2
@@ -98,8 +98,8 @@ fi
 daftarip=$(cat /root/data)
 rm -rf /root/allow
 git config --global user.email "almonika.cindy@outlook.com"
-git config --global user.name "akubudakgrik"
-git clone https://github.com/akubudakgrik/allow.git
+git config --global user.name "vpn-script"
+git clone https://github.com/vpn-script/allow.git
 mkdir /root/allow
 cd /root/allow/
 rm -rf .git
@@ -111,13 +111,13 @@ git init >/dev/null 2>&1
 git add .
 git commit -m register
 git branch -M main
-git remote add origin https://github.com/akubudakgrik/allow.git
-git push -f https://${tokengit}@github.com/akubudakgrik/allow.git
+git remote add origin https://github.com/vpn-script/allow.git
+git push -f https://${tokengit}@github.com/vpn-script/allow.git
 echo -e "IPVPS Registration Completed"
 sleep 1
 links1="apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot"
 links2="apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && sleep 2 && reboot"
-links3="sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://raw.githubusercontent.com/akubudakgrik/multiport/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh"
+links3="sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://raw.githubusercontent.com/vpn-script/multiport/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh"
 
 echo -e "\033[0;34m------------------------------------------\033[0m"
 echo -e "\E[44;1;39m      Client IP VPS Add Successfully      \E[0m"
@@ -127,7 +127,7 @@ echo "  Order ID      : $id"
 echo "  Register Date : $hariini"
 echo "  Expired Date  : $exp"
 echo "  Client Name   : $client"
-echo "  Script Ver    : akubudakgrik"
+echo "  Script Ver    : vpn-script"
 echo -e "\033[0;34m------------------------------------------\033[0m"
 echo " Update & Upgrade First Your VPS for Debian 10 & 11: "
 echo ""
@@ -167,8 +167,8 @@ rm -rf /root/allow
 rm -rf /root/data
 rm -rf /root/ipvps.conf
 git config --global user.email "almonika.cindy@outlook.com"
-git config --global user.name "akubudakgrik"
-git clone https://github.com/akubudakgrik/allow.git
+git config --global user.name "vpn-script"
+git clone https://github.com/vpn-script/allow.git
 mkdir /root/allow
 cd /root/allow/
 rm -rf .git
@@ -193,8 +193,8 @@ git init >/dev/null 2>&1
 git add .
 git commit -m delete
 git branch -M main
-git remote add origin https://github.com/akubudakgrik/allow.git
-git push -f https://${tokengit}@github.com/akubudakgrik/allow.git
+git remote add origin https://github.com/vpn-script/allow.git
+git push -f https://${tokengit}@github.com/vpn-script/allow.git
 clear
 echo -e "\033[0;34m------------------------------------------\033[0m"
 echo -e "\E[44;1;39m      Client IP Deleted Successfully      \E[0m"
@@ -221,8 +221,8 @@ fi
 clear
 rm -rf /root/allow
 git config --global user.email "almonika.cindy@outlook.com"
-git config --global user.name "akubudakgrik"
-git clone https://github.com/akubudakgrik/allow.git
+git config --global user.name "vpn-script"
+git clone https://github.com/vpn-script/allow.git
   mkdir /root/allow
   cd /root/allow/
   rm -rf .git
@@ -268,8 +268,8 @@ sed -i "s/### $user $exp/### $user $exp4/g" /root/allow/ipvps.conf
 git add .
 git commit -m renew
 git branch -M main
-git remote add origin https://github.com/akubudakgrik/allow.git
-git push -f https://${tokengit}@github.com/akubudakgrik/allow.git
+git remote add origin https://github.com/vpn-script/allow.git
+git push -f https://${tokengit}@github.com/vpn-script/allow.git
 echo -e "IPVPS Registration Completed"
   clear
 echo -e "\033[0;34m------------------------------------------\033[0m"
@@ -301,8 +301,8 @@ rm -rf /root/allow
 rm -rf /root/data
 rm -rf /root/ipvps.conf
 git config --global user.email "almonika.cindy@outlook.com"
-git config --global user.name "akubudakgrik"
-git clone https://github.com/akubudakgrik/allow.git
+git config --global user.name "vpn-script"
+git clone https://github.com/vpn-script/allow.git
 cd /root/allow/
 rm -rf .git
 git init

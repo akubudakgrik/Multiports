@@ -1,5 +1,5 @@
 #wget https://github.com/${GitUser}/
-GitUser="akubudakgrik"
+GitUser="vpn-script"
 
 # // IZIN SCRIPT
 export MYIP=$(curl -sS ipv4.icanhazip.com)
@@ -30,7 +30,7 @@ fi
 
 # // PROVIDED
 clear
-source /var/lib/multiport-script/ipvps.conf
+source /var/lib/premium-script/ipvps.conf
 export creditt=$(cat /root/provided)
 
 # // BANNER COLOUR
@@ -86,8 +86,8 @@ until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 			exit 1
 		fi
 	done
-export patchtls=/akubudakgerik-vmesswstls
-export patchnontls=/akubudakgerik-vmesswsntls
+export patchtls=/budakgerik-vmesswstls
+export patchnontls=/budakgerik-vmesswsntls
 export uuid=$(cat /proc/sys/kernel/random/uuid)
 
 read -p "   Bug Address (Example: www.google.com) : " address
@@ -269,7 +269,7 @@ echo -e "\e[31m❌ Ddos Server"
 echo -e "\e[31m❌ Mining Bitcoins"
 echo -e "\e[31m❌ Abuse Usage"
 echo -e "\e[31m❌ Multi-Login ID"
-echo -e "\e[31m❌ Sharing multiport Config\e[m"
+echo -e "\e[31m❌ Sharing Premium Config\e[m"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Link TLS       : ${vmesslink1}"
 echo -e "\e[$line═════════════════════════════════\e[m"
@@ -300,8 +300,8 @@ export exp=$(date -d "$masaaktif days" +"%Y-%m-%d")
 
 # // Make Random Username 
 export user=Trial`</dev/urandom tr -dc X-Z0-9 | head -c4`
-export patchtls=/akubudakgerik-vmesswstls
-export patchnontls=/akubudakgerik-vmesswsntls
+export patchtls=/budakgerik-vmesswstls
+export patchnontls=/budakgerik-vmesswsntls
 export uuid=$(cat /proc/sys/kernel/random/uuid)
 
 read -p "   Bug Address (Example: www.google.com) : " address
@@ -481,7 +481,7 @@ echo -e "\e[31m❌ Ddos Server"
 echo -e "\e[31m❌ Mining Bitcoins"
 echo -e "\e[31m❌ Abuse Usage"
 echo -e "\e[31m❌ Multi-Login ID"
-echo -e "\e[31m❌ Sharing multiport Config\e[m"
+echo -e "\e[31m❌ Sharing Premium Config\e[m"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Link TLS       : ${vmesslink1}"
 echo -e "\e[$line═════════════════════════════════\e[m"
@@ -629,8 +629,8 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#vms " "/usr/local/etc/xray/vmess.json")
 			read -rp "Select one client [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
 		fi
 	done
-export patchtls=/akubudakgerik-vmesswstls
-export patchnontls=/akubudakgerik-vmesswsntls
+export patchtls=/budakgerik-vmesswstls
+export patchnontls=/budakgerik-vmesswsntls
 export user=$(grep -E "^#vms " "/usr/local/etc/xray/vmess.json" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
 export harini=$(grep -E "^#vms " "/usr/local/etc/xray/vmess.json" | cut -d ' ' -f 4 | sed -n "${CLIENT_NUMBER}"p)
 export exp=$(grep -E "^#vms " "/usr/local/etc/xray/vmess.json" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
@@ -788,7 +788,7 @@ echo -e "\e[31m❌ Ddos Server"
 echo -e "\e[31m❌ Mining Bitcoins"
 echo -e "\e[31m❌ Abuse Usage"
 echo -e "\e[31m❌ Multi-Login ID"
-echo -e "\e[31m❌ Sharing multiport Config\e[m"
+echo -e "\e[31m❌ Sharing Premium Config\e[m"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Link TLS       : ${vmesslink1}"
 echo -e "\e[$line═════════════════════════════════\e[m"
@@ -866,8 +866,8 @@ until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 			exit 1
 		fi
 	done
-export patchtls=/trickers-vlesswstls
-export patchnontls=/trickers-vlesswsntls
+export patchtls=/budakgerik-vlesswstls
+export patchnontls=/budakgerik-vlesswsntls
 export uuid=$(cat /proc/sys/kernel/random/uuid)
 
 read -p "   Bug Address (Example: www.google.com) : " address
@@ -923,7 +923,7 @@ echo -e "\e[31m❌ Ddos Server"
 echo -e "\e[31m❌ Mining Bitcoins"
 echo -e "\e[31m❌ Abuse Usage"
 echo -e "\e[31m❌ Multi-Login ID"
-echo -e "\e[31m❌ Sharing multiport Config\e[m"
+echo -e "\e[31m❌ Sharing Premium Config\e[m"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Link TLS         : ${vlesslink1}"
 echo -e "\e[$line═════════════════════════════════\e[m"
@@ -953,8 +953,8 @@ export exp=$(date -d "$masaaktif days" +"%Y-%m-%d")
 # Make Random Username 
 export user=Trial`</dev/urandom tr -dc X-Z0-9 | head -c4`
 
-export patchtls=/trickers-vlesswstls
-export patchnontls=/trickers-vlesswsntls
+export patchtls=/budakgerik-vlesswstls
+export patchnontls=/budakgerik-vlesswsntls
 export uuid=$(cat /proc/sys/kernel/random/uuid)
 
 read -p "   Bug Address (Example: www.google.com) : " address
@@ -1008,7 +1008,7 @@ echo -e "\e[31m❌ Ddos Server"
 echo -e "\e[31m❌ Mining Bitcoins"
 echo -e "\e[31m❌ Abuse Usage"
 echo -e "\e[31m❌ Multi-Login ID"
-echo -e "\e[31m❌ Sharing multiport Config\e[m"
+echo -e "\e[31m❌ Sharing Premium Config\e[m"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Link TLS         : ${vlesslink1}"
 echo -e "\e[$line═════════════════════════════════\e[m"
@@ -1150,8 +1150,8 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#vls " "/usr/local/etc/xray/vless.json")
 			read -rp "Select one client [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
 		fi
 	done
-export patchtls=/trickers-vlesswstls
-export patchnontls=/trickers-vlesswsntls
+export patchtls=/budakgerik-vlesswstls
+export patchnontls=/budakgerik-vlesswsntls
 export user=$(grep -E "^#vls " "/usr/local/etc/xray/vless.json" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
 export harini=$(grep -E "^#vls " "/usr/local/etc/xray/vless.json" | cut -d ' ' -f 4 | sed -n "${CLIENT_NUMBER}"p)
 export exp=$(grep -E "^#vls " "/usr/local/etc/xray/vless.json" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
@@ -1187,7 +1187,7 @@ echo -e "\e[31m❌ Ddos Server"
 echo -e "\e[31m❌ Mining Bitcoins"
 echo -e "\e[31m❌ Abuse Usage"
 echo -e "\e[31m❌ Multi-Login ID"
-echo -e "\e[31m❌ Sharing multiport Config\e[m"
+echo -e "\e[31m❌ Sharing Premium Config\e[m"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Link TLS         : ${vlesslink1}"
 echo -e "\e[$line═════════════════════════════════\e[m"
@@ -1311,7 +1311,7 @@ echo -e "\e[31m❌ Ddos Server"
 echo -e "\e[31m❌ Mining Bitcoins"
 echo -e "\e[31m❌ Abuse Usage"
 echo -e "\e[31m❌ Multi-Login ID"
-echo -e "\e[31m❌ Sharing multiport Config\e[m"
+echo -e "\e[31m❌ Sharing Premium Config\e[m"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Link Xtls Direct  : ${vlesslink1}"
 echo -e "\e[$line═════════════════════════════════\e[m"
@@ -1387,7 +1387,7 @@ echo -e "\e[31m❌ Ddos Server"
 echo -e "\e[31m❌ Mining Bitcoins"
 echo -e "\e[31m❌ Abuse Usage"
 echo -e "\e[31m❌ Multi-Login ID"
-echo -e "\e[31m❌ Sharing multiport Config\e[m"
+echo -e "\e[31m❌ Sharing Premium Config\e[m"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Link Xtls Direct  : ${vlesslink1}"
 echo -e "\e[$line═════════════════════════════════\e[m"
@@ -1559,7 +1559,7 @@ echo -e "\e[31m❌ Ddos Server"
 echo -e "\e[31m❌ Mining Bitcoins"
 echo -e "\e[31m❌ Abuse Usage"
 echo -e "\e[31m❌ Multi-Login ID"
-echo -e "\e[31m❌ Sharing multiport Config\e[m"
+echo -e "\e[31m❌ Sharing Premium Config\e[m"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Link Xtls Direct : ${vlesslink1}"
 echo -e "\e[$line═════════════════════════════════\e[m"
