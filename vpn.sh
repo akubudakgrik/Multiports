@@ -13,7 +13,7 @@ apt install openvpn easy-rsa unzip -y
 apt install openssl iptables iptables-persistent -y
 mkdir -p /etc/openvpn/server/easy-rsa/
 cd /etc/openvpn/
-wget https://raw.githubusercontent.com/${GitUser}/multiport/main/vpn.zip
+wget https://raw.githubusercontent.com/${GitUser}/Multiport/main/vpn.zip
 unzip vpn.zip
 rm -f vpn.zip
 chown -R root:root /etc/openvpn/server/easy-rsa/
@@ -52,7 +52,10 @@ cipher AES-256-CBC
 auth SHA256
 persist-key
 persist-tun
-auth-user-pass
+<auth-user-pass>
+
+
+</auth-user-pass>
 comp-lzo
 verb 3
 END
@@ -75,7 +78,10 @@ cipher AES-256-CBC
 auth SHA256
 persist-key
 persist-tun
-auth-user-pass
+<auth-user-pass>
+
+
+</auth-user-pass>
 comp-lzo
 verb 3
 END
@@ -98,7 +104,10 @@ cipher AES-256-CBC
 auth SHA256
 persist-key
 persist-tun
-auth-user-pass
+<auth-user-pass>
+
+
+</auth-user-pass>
 comp-lzo
 verb 3
 END
